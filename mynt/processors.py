@@ -231,7 +231,7 @@ class Writer(object):
     
     def _highlight(self, match):
         language, code = match.groups()
-        formatter = HtmlFormatter(linenos = 'table')
+        formatter = HtmlFormatter(linenos = False)
         code = unescape(code)
         
         try:
